@@ -1,6 +1,6 @@
 models:
-  Flight:
-    airportone:
+  Airport1:
+    fake:
       _count: 50
       origin: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
       destination: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
