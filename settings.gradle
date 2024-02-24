@@ -18,3 +18,5 @@ include ':airlineone'
 project(':airlineone').projectDir = file('./infrastructure/driven-adapters/airlineone')
 include ':airlinetwo'
 project(':airlinetwo').projectDir = file('./infrastructure/driven-adapters/airlinetwo')
+include ':api-rest'
+project(':api-rest').projectDir = file('./infrastructure/entry-points/api-rest')
