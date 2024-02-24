@@ -16,7 +16,7 @@ import java.util.Arrays;
 @Service
 public class AirlineOneClient implements IAirlineOneClient {
 
-    private final String endpointUrl = "https://mockend.com/api/mockend/demo/posts";
+    private final String endpointUrl = "https://mockend.com/api/nymer1ax/flight/airport1";
     private final RestTemplate restTemplate = new RestTemplate();
 
     @Override
@@ -28,11 +28,10 @@ public class AirlineOneClient implements IAirlineOneClient {
                 return Arrays.asList(responseBody);
             }
         } catch (RestClientException e) {
-            System.err.println("Error al realizar la solicitud al servidor:");
-            e.printStackTrace();
+            return new ArrayList<>();
         } catch (Exception e) {
-            System.err.println("Se ha producido un error inesperado:");
-            e.printStackTrace();
+            return new ArrayList<>();
+
         }
         return new ArrayList<>();
     }
