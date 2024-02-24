@@ -1,23 +1,19 @@
-package co.com.flight.model.flight.valueobject;
+package co.com.flight.airlineone.request;
 
 import lombok.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.List;
+
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Builder
-public class SearchCriteria {
+public class AirlineOneRequest {
     private String origin;
     private String destination;
     private LocalDateTime departureDate;
     private LocalDateTime returnDate;
-    private int passengers;
-    private String cabinClass;
-    private int daysFlexibility;
-    private List<String> airlines;
+    private Integer passengerCount;
 }
