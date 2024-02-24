@@ -2,26 +2,25 @@ models:
   Airport1:
     fake:
       _count: 50
-      origin: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
-      destination: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
-      departureDate: { dateTime: [2024-01-01T00:00:00Z, 2024-12-31T23:59:59Z] }
-      returnDate: { dateTime: [2024-01-02T00:00:00Z, 2025-01-01T23:59:59Z] }
+      origin: { stringOf: ["JFK", "LAX", "ORD", "ATL", "LHR", "CDG", "FRA", "DXB"] }
+      destination: { stringOf: ["JFK", "LAX", "ORD", "ATL", "LHR", "CDG", "FRA", "DXB"] }
+      departureDate: { dateTime: ["2024-01-01T00:00:00Z", "2024-12-31T23:59:59Z"] }
+      returnDate: { dateTime: ["2024-01-02T00:00:00Z", "2025-01-01T23:59:59Z"] }
       passengerCount: { int: [1, 4] }
-      airline: { stringOf: [Delta, United, American, Southwest, British Airways, Air France, Lufthansa, Emirates] }
+      airline: { stringOf: ["Delta", "United", "American", "Southwest", "British Airways", "Air France", "Lufthansa", "Emirates"] }
       price: { int: [100, 2000] }
-      cabinClass: { stringOf: [Economy, Business] }
-      departureAirportCode: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
-      destinationAirportCode: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
+      cabinClass: { stringOf: ["Economy", "Business"] }
+      departureAirportCode: { stringOf: ["JFK", "LAX", "ORD", "ATL", "LHR", "CDG", "FRA", "DXB"] }
+      destinationAirportCode: { stringOf: ["JFK", "LAX", "ORD", "ATL", "LHR", "CDG", "FRA", "DXB"] }
       createdAt: dateTime
-Airport2:
+  Airport2:
     fake:
       _count: 30
       carrier: { stringOf: ["Delta", "United", "American", "Southwest", "British Airways", "Air France", "Lufthansa", "Emirates"] }
       basePrice: { int: [100, 1000] }
       tax: { int: [5, 150] }
       discount: { int: [0, 20] }
-      departureAirportName: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
-      arrivalAirportName: { stringOf: [JFK, LAX, ORD, ATL, LHR, CDG, FRA, DXB] }
-      outboundDateTime: { dateTime: [2024-01-01T00:00:00Z, 2024-12-31T23:59:59Z] }
-      inboundDateTime: { dateTime: [2024-01-02T00:00:00Z, 2025-01-01T23:59:59Z] }    
-
+      departureAirportName: { stringOf: ["JFK", "LAX", "ORD", "ATL", "LHR", "CDG", "FRA", "DXB"] }
+      arrivalAirportName: { stringOf: ["JFK", "LAX", "ORD", "ATL", "LHR", "CDG", "FRA", "DXB"] }
+      outboundDateTime: { dateTime: ["2024-01-01T00:00:00Z", "2024-12-31T23:59:59Z"] }
+      inboundDateTime: { dateTime: ["2024-01-02T00:00:00Z", "2025-01-01T23:59:59Z"] }
